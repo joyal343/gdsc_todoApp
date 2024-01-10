@@ -1,0 +1,158 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+input{
+    outline: none; /* Gets rid of outline on select */
+    border: none;
+    font: inherit;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    background: rgb(101,224,203);
+background: -moz-linear-gradient(180deg, rgba(101,224,203,1) 35%, rgba(77,136,228,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(101,224,203,1) 35%, rgba(77,136,228,1) 100%);
+background: linear-gradient(180deg, rgba(101,224,203,1) 35%, rgba(77,136,228,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#65e0cb",endColorstr="#4d88e4",GradientType=1);
+
+    height: 100vh;    
+}
+
+.todo{
+    position: relative;
+    background-color: white;
+    width: 30%;
+    height: 80vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width:850px) {
+    .todo{
+        width: 40%;
+    }    
+}
+@media (max-width:620px) {
+    .todo{
+        width: 70%;
+    }    
+}
+
+@media (max-width:400px) {
+    .todo{
+        width: 80%;
+    }
+}
+
+.heading{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+
+/* Input */
+.new_task{
+   display: flex;
+   gap: 10px; 
+   margin-bottom: 20px;
+}
+
+#nt_input{
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+#nt_btn{
+    padding: 10px;
+    background-color: #8b49ec;
+}
+
+.filter_white{
+    filter: invert(100%) sepia(85%) saturate(12%) hue-rotate(206deg) brightness(103%) contrast(103%);
+}
+
+/* Task */
+.task{
+    background-color: #f3f1f4;
+    margin-bottom: 10px;
+    display: flex;
+    padding-left: 10px;
+}
+.task_text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-grow: 1;
+}
+
+
+.del_btn{
+    background-color: #e64d3b;
+    padding: 5px 10px 5px 10px;
+}
+
+.del_btn_img{
+    width: 20px;
+    height: 20px;
+}
+
+.hide{
+    display: none;
+}
+/* Footer */
+
+#clear{
+    padding: 10px;
+    background-color: #8b49ec;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 40px);
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    gap: 10px;
+}
+
+#footer_text{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+
